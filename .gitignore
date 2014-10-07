@@ -1,0 +1,28 @@
+###########################################
+#
+# Files/types to be ignored by GIT DVCS
+#
+##########################################
+
+# Gradle Files/Directories
+/target
+/.gradle
+/build
+
+#IntelliJ IDEA Files/Directories
+*.iml
+*.ipr
+*.iws
+/.idea
+/.apt_generated
+/out
+atlassian-ide-plugin.xml
+
+# Dev Tools
+jenvrc
+
+# Mac files
+*.DS_Store
+
+# Temp files
+.*.swp
