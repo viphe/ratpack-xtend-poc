@@ -6,9 +6,9 @@ buildscript {
 }
 
 plugins {
-  id "io.ratpack.ratpack-java" version "0.9.9"
+  id "io.ratpack.ratpack-java" version "1.2.0"
   id "com.github.johnrengelman.shadow" version "1.1.2"
-  id "org.xtend.xtend" version "0.2.2"
+  id "org.xtend.xtend" version "0.4.14"
 }
 
 
@@ -19,10 +19,12 @@ repositories {
 
 
 dependencies {
-  compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.6.+'
+  compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.9.+'
   runtime "org.slf4j:slf4j-simple:1.7.5"
 }
 
+mainClassName = "Main"
+
 task wrapper(type: Wrapper) {
-  gradleVersion = '2.1'
+  gradleVersion = '2.7'
 }
